@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">  
+                <img id="Logito" src="assets/Logo.png">
+            </div>
+        </header>
+        <main>
+            <div class="input-section">
+                <textarea id="input-text" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="error-message" class="error-message"> <img src="assets/bi_exclamation-circle-fill.png" alt=""> Ingresar solo letras minúsculas sin caracteres especiales</p>
+                <div class="buttons">
+                    <button onclick="encriptar()">Encriptar</button>
+                    <button onclick="desencriptar()">Desencriptar</button>
+                    <button onclick="reiniciar()">Limpiar Valores</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <img id="placeholder-image" src="assets/Muneco.png" alt="Ningún mensaje fue encontrado">
+                <textarea id="output-text" readonly></textarea>
+                <button id="CopiarBoton" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>Desarrollado por Javier Farias 2024</p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
